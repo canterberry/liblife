@@ -1,9 +1,10 @@
-#ifndef _GRID_H_
-#define _GRID_H_
+#ifndef _LIFE_GRID_H_
+#define _LIFE_GRID_H_
 
-#include <boolean.h>
-#include <direction.h>
 #include <stdlib.h>
+
+#include <life/boolean.h>
+#include <life/direction.h>
 
 typedef struct Grid {
   uint8_t *blocks;

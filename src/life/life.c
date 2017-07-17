@@ -1,7 +1,7 @@
-#include <boolean.h>
-#include <direction.h>
-#include <grid.h>
-#include <life.h>
+#include <life/boolean.h>
+#include <life/direction.h>
+#include <life/grid.h>
+#include <life/life.h>
 
 boolean Life_getNextCellValue(grid_t *grid, uint16_t cell) {
   uint8_t livingNeighborCount = 0;

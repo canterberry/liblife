@@ -5,8 +5,8 @@ all: lib/liblife.so
 lib:
 	mkdir -p lib
 
-lib/liblife.so: lib src/*.c include/*.h
-	cc -shared -o lib/liblife.so -Iinclude src/*.c
+lib/liblife.so: lib src/**/*.c include/**/*.h
+	cc -shared -o lib/liblife.so -Iinclude src/**/*.c
 
 clean:
 	rm -vfR lib

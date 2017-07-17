@@ -1,6 +1,7 @@
-#include <grid.h>
-#include <koks-galaxy.h>
 #include <stdlib.h>
+
+#include <life/grid.h>
+#include <life/seeds/koks-galaxy.h>
 
 void KoksGalaxy_seed(grid_t *grid) {
   uint8_t seed [32] = {

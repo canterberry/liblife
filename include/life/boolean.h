@@ -1,5 +1,5 @@
-#ifndef _BOOLEAN_H_
-#define _BOOLEAN_H_
+#ifndef _LIFE_BOOLEAN_H_
+#define _LIFE_BOOLEAN_H_
 
 #include <stdlib.h>
 

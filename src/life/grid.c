@@ -1,7 +1,8 @@
-#include <boolean.h>
-#include <direction.h>
-#include <grid.h>
 #include <stdlib.h>
+
+#include <life/boolean.h>
+#include <life/direction.h>
+#include <life/grid.h>
 
 grid_t *Grid_new(uint16_t width, uint16_t height) {
   grid_t *grid = malloc(sizeof(grid_t));

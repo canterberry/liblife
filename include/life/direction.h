@@ -1,5 +1,5 @@
-#ifndef _DIRECTION_H_
-#define _DIRECTION_H_
+#ifndef _LIFE_DIRECTION_H_
+#define _LIFE_DIRECTION_H_
 
 #include <stdlib.h>
 
