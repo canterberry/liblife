@@ -1,12 +1,17 @@
-all: lib/liblife.so
+SOURCE_FILES = $(shell find src -type f -name '*.c')
+HEADER_FILES = $(shell find include -type f -name '*.h')
+OUTPUT_DIR = lib
+OUTPUT_FILE = $(OUTPUT_DIR)/liblife.so
 
 .PHONY: clean all
 
-lib:
-	mkdir -p lib
+all: $(OUTPUT_FILE)
 
-lib/liblife.so: lib src/**/*.c include/**/*.h
-	cc -shared -o lib/liblife.so -Iinclude src/**/*.c
+$(OUTPUT_DIR):
+	mkdir -p $(OUTPUT_DIR)
+
+$(OUTPUT_FILE): $(OUTPUT_DIR) $(SOURCE_FILES) $(INCLUDE_FILES)
+	cc -shared -o $(OUTPUT_FILE) -Iinclude $(SOURCE_FILES)
 
 clean:
-	rm -vfR lib
+	rm -vfR $(OUTPUT_DIR)
